@@ -1,0 +1,97 @@
+/*
+Syntax for CSS
+
+Selector{
+	property:  value;
+}
+
+*/
+
+/* "*" = universal selector | least priority*/
+
+* {
+
+	font-family: "Roboto", sans-serif;
+}
+
+/* Element selector | High priority */
+h1, h2 {
+
+	font-family: "Montserrat", sans-serif;
+}
+
+img {
+
+	height: 250px;
+	width: 250px;
+	border: 5px solid darkcyan;
+	border-radius: 100%;
+}
+
+#landing{
+	/*viewheight*/
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#gallery{
+
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+ul{
+	list-style: none;
+	/*padding-top: 25px;
+	padding-bottom: 50px;
+	padding-left: 60px;
+	padding-right: 80px;*/
+	padding: 0;
+
+}
+/*Class Selectors*/
+.Tools{
+	border: 5px solid darkred;
+	height: 200px;
+	width:  75%;
+	margin: 20px;
+	padding: 25px;
+}
+
+h2 {
+	color: #a6d3c1;
+}
+
+html {
+
+	scroll-behavior: smooth;
+}
+
+
+/*  m = margin
+	p = padding
+
+	t = top
+	s = start/left
+	e = right/end
+	b = bottom
+
+	1-5 or auto
+
+	mx-auto
+
+	bg-
+
+	primary - blue
+	secondary - gray
+	warning - yellow
+	danger - red
+	info - light blue
+	success - green
+*/
