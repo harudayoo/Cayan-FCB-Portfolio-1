@@ -23,12 +23,18 @@
 	<!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
+	<!-- AOS (Animate On Scroll) Library -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<!-- Font Awesome for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 	</head>
 
 	<body>
 
 		<!-- Navbar start -->
-		<nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar">
   <div class="container-fluid">
     
     <button 
@@ -45,77 +51,388 @@
     <div class="collapse navbar-collapse" id="portfolio-nav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#landing">Home</a>
+          <a class="nav-link nav-link-custom" aria-current="page" href="#landing">
+            <i class="fas fa-home"></i> Home
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#gallery">Gallery</a>
+          <a class="nav-link nav-link-custom" href="#about">
+            <i class="fas fa-user"></i> About
+          </a>
         </li>
-        
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" href="#skills">
+            <i class="fas fa-code"></i> Skills
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" href="#projects">
+            <i class="fas fa-project-diagram"></i> Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" href="#contact">
+            <i class="fas fa-envelope"></i> Contact
+          </a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-		<!-- Navbar end -->
+		<div class="tupperware">
 
-			<!-- h1 to h... are heading tags -->
-			
-			<!--
-			<h1>kimi no sekai</h1>
-			<h2>kimi no sekai</h2>
-			<h3>kimi no sekai</h3>
-			<h4>kimi no sekai</h4>
-			<h5>kimi no sekai</h5>
-			<h6>kimi no sekai</h6>
-			-->
-
-		<div class ="tupperware">
-			<!-- class = name of div/division -->
-
-			<section id="landing" class="text-center mt-3">
-			<!-- id = name of section -->	
-
-						<h1>Full Stack Web Developer</h1>
-								<p>
-								
-								harudayoo	
-
-								</p>
-								<img src="images/img.png">
-			</section>
-			<!-- landing page section end -->
-
-			<section id="gallery" class="text-center bg-dark text-white mb-3">
-				<div class="Tools">
-				<h2>Languages I speak</h2>
-					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>Alien</li>
-						<li>Japanese</li>
-					</ul>
+			<section id="landing" class="hero-section">
+				<div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+					<div class="profile-image-container" data-aos="zoom-in" data-aos-delay="300">
+						<img src="images/img.png" alt="Harudayoo - Full Stack Web Developer" class="profile-image">
+						<div class="image-overlay"></div>
+					</div>
+					<h1 class="hero-title">
+						<span class="typing-text"></span>
+						<span class="cursor">|</span>
+					</h1>
+					<p class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
+						Passionate about creating amazing web experiences
+					</p>
+					<div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+						<a href="#about" class="btn btn-primary btn-animated">Learn More</a>
+						<a href="#contact" class="btn btn-outline-light btn-animated">Get In Touch</a>
+					</div>
+					<div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1000">
+						<div class="scroll-arrow">
+							<i class="fas fa-chevron-down"></i>
+						</div>
+					</div>
 				</div>
-
-				<div class="Tools">
-				<h2>Tools I use</h2>
-					<ul>
-						<li>gitbash</li>
-						<li>sublime</li>
-						<li>github</li>
-						<li>google chrome</li>
-					</ul>
+				<div class="floating-elements">
+					<div class="floating-element" style="top: 10%; left: 10%;"></div>
+					<div class="floating-element" style="top: 20%; right: 15%;"></div>
+					<div class="floating-element" style="bottom: 30%; left: 20%;"></div>
+					<div class="floating-element" style="bottom: 10%; right: 10%;"></div>
 				</div>
-
 			</section>
-			<!-- gallery page section end -->
 
-			<!--<p>sample text</p>
-			<span>sample text 2</span>-->
+			<section id="about" class="about-section">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6" data-aos="fade-right">
+							<h2 class="section-title">About Me</h2>
+							<p class="about-text">
+								Hello! I'm <strong>Harudayoo</strong>, a passionate full-stack web developer with a love for creating 
+								innovative and user-friendly web applications. I enjoy turning complex problems into simple, 
+								beautiful, and intuitive solutions.
+							</p>
+							<p class="about-text">
+								When I'm not coding, you can find me exploring new technologies, contributing to open-source 
+								projects, or sharing my knowledge with the developer community.
+							</p>
+							<div class="stats-container">
+								<div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+									<div class="stat-number">50+</div>
+									<div class="stat-label">Projects Completed</div>
+								</div>
+								<div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+									<div class="stat-number">2+</div>
+									<div class="stat-label">Years Experience</div>
+								</div>
+								<div class="stat-item" data-aos="zoom-in" data-aos-delay="600">
+									<div class="stat-number">100%</div>
+									<div class="stat-label">Client Satisfaction</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-left">
+							<div class="about-image">
+								<div class="tech-icons">
+									<i class="fab fa-html5"></i>
+									<i class="fab fa-css3-alt"></i>
+									<i class="fab fa-js-square"></i>
+									<i class="fab fa-react"></i>
+									<i class="fab fa-node-js"></i>
+									<i class="fab fa-python"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="skills" class="skills-section">
+				<div class="container">
+					<h2 class="section-title text-center" data-aos="fade-up">My Skills</h2>
+					<div class="row">
+						<div class="col-lg-6" data-aos="fade-right">
+							<h3 class="skills-category">Languages I Speak</h3>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span class="skill-name">HTML</span>
+									<span class="skill-percentage">95%</span>
+								</div>
+								<div class="skill-bar">
+									<div class="skill-progress" data-width="95%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span class="skill-name">CSS</span>
+									<span class="skill-percentage">90%</span>
+								</div>
+								<div class="skill-bar">
+									<div class="skill-progress" data-width="90%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span class="skill-name">JavaScript</span>
+									<span class="skill-percentage">85%</span>
+								</div>
+								<div class="skill-bar">
+									<div class="skill-progress" data-width="85%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span class="skill-name">Python</span>
+									<span class="skill-percentage">80%</span>
+								</div>
+								<div class="skill-bar">
+									<div class="skill-progress" data-width="80%"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" data-aos="fade-left">
+							<h3 class="skills-category">Tools I Use</h3>
+							<div class="tools-grid">
+								<div class="tool-card" data-aos="flip-left" data-aos-delay="100">
+									<i class="fab fa-git-alt"></i>
+									<span>Git & GitHub</span>
+								</div>
+								<div class="tool-card" data-aos="flip-left" data-aos-delay="200">
+									<i class="fas fa-code"></i>
+									<span>VS Code</span>
+								</div>
+								<div class="tool-card" data-aos="flip-left" data-aos-delay="300">
+									<i class="fab fa-chrome"></i>
+									<span>Chrome DevTools</span>
+								</div>
+								<div class="tool-card" data-aos="flip-left" data-aos-delay="400">
+									<i class="fab fa-figma"></i>
+									<span>Figma</span>
+								</div>
+								<div class="tool-card" data-aos="flip-left" data-aos-delay="500">
+									<i class="fab fa-docker"></i>
+									<span>Docker</span>
+								</div>
+								<div class="tool-card" data-aos="flip-left" data-aos-delay="600">
+									<i class="fas fa-database"></i>
+									<span>MongoDB</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="projects-section">
+				<div class="container">
+					<h2 class="section-title text-center" data-aos="fade-up">Featured Projects</h2>
+					<div class="row">
+						<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+							<div class="project-card">
+								<div class="project-image">
+									<div class="project-overlay">
+										<div class="project-links">
+											<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+											<a href="#" class="project-link"><i class="fab fa-github"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="project-content">
+									<h4>E-Commerce Platform</h4>
+									<p>A modern e-commerce solution built with React and Node.js</p>
+									<div class="project-tech">
+										<span class="tech-tag">React</span>
+										<span class="tech-tag">Node.js</span>
+										<span class="tech-tag">MongoDB</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+							<div class="project-card">
+								<div class="project-image">
+									<div class="project-overlay">
+										<div class="project-links">
+											<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+											<a href="#" class="project-link"><i class="fab fa-github"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="project-content">
+									<h4>Task Management App</h4>
+									<p>A collaborative task management tool with real-time updates</p>
+									<div class="project-tech">
+										<span class="tech-tag">Vue.js</span>
+										<span class="tech-tag">Express</span>
+										<span class="tech-tag">Socket.io</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+							<div class="project-card">
+								<div class="project-image">
+									<div class="project-overlay">
+										<div class="project-links">
+											<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+											<a href="#" class="project-link"><i class="fab fa-github"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="project-content">
+									<h4>Weather Dashboard</h4>
+									<p>A beautiful weather app with animated weather icons</p>
+									<div class="project-tech">
+										<span class="tech-tag">JavaScript</span>
+										<span class="tech-tag">CSS3</span>
+										<span class="tech-tag">API</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="contact-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto text-center">
+							<h2 class="section-title" data-aos="fade-up">Let's Work Together</h2>
+							<p class="contact-subtitle" data-aos="fade-up" data-aos-delay="200">
+								Have a project in mind? Let's discuss how we can bring your ideas to life.
+							</p>
+							<div class="contact-methods" data-aos="fade-up" data-aos-delay="400">
+								<a href="mailto:harudayoo@example.com" class="contact-method">
+									<i class="fas fa-envelope"></i>
+									<span>harudayoo@example.com</span>
+								</a>
+								<a href="https://linkedin.com/in/harudayoo" class="contact-method">
+									<i class="fab fa-linkedin"></i>
+									<span>LinkedIn</span>
+								</a>
+								<a href="https://github.com/harudayoo" class="contact-method">
+									<i class="fab fa-github"></i>
+									<span>GitHub</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 		</div>
 
 				<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<!-- AOS Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Custom JavaScript -->
+<script>
+	// Initialize AOS
+	AOS.init({
+		duration: 800,
+		easing: 'ease-in-out',
+		once: true,
+		offset: 100
+	});
+
+	// Typing animation
+	const typingText = document.querySelector('.typing-text');
+	const texts = ['Full Stack Web Developer', 'Creative Problem Solver', 'Tech Enthusiast'];
+	let textIndex = 0;
+	let charIndex = 0;
+	let isDeleting = false;
+
+	function typeWriter() {
+		const currentText = texts[textIndex];
+		
+		if (isDeleting) {
+			typingText.textContent = currentText.substring(0, charIndex - 1);
+			charIndex--;
+		} else {
+			typingText.textContent = currentText.substring(0, charIndex + 1);
+			charIndex++;
+		}
+
+		let typeSpeed = isDeleting ? 50 : 100;
+
+		if (!isDeleting && charIndex === currentText.length) {
+			typeSpeed = 2000;
+			isDeleting = true;
+		} else if (isDeleting && charIndex === 0) {
+			isDeleting = false;
+			textIndex = (textIndex + 1) % texts.length;
+		}
+
+		setTimeout(typeWriter, typeSpeed);
+	}
+
+	// Start typing animation after page load
+	window.addEventListener('load', () => {
+		setTimeout(typeWriter, 500);
+	});
+
+	// Skill bars animation
+	function animateSkillBars() {
+		const skillBars = document.querySelectorAll('.skill-progress');
+		skillBars.forEach(bar => {
+			const width = bar.getAttribute('data-width');
+			bar.style.width = width;
+		});
+	}
+
+	// Animate skill bars when they come into view
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				animateSkillBars();
+			}
+		});
+	});
+
+	const skillsSection = document.querySelector('#skills');
+	if (skillsSection) {
+		observer.observe(skillsSection);
+	}
+
+	// Smooth scrolling for navbar links
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+			const target = document.querySelector(this.getAttribute('href'));
+			if (target) {
+				target.scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				});
+			}
+		});
+	});
+
+	// Navbar scroll effect
+	window.addEventListener('scroll', () => {
+		const navbar = document.querySelector('.custom-navbar');
+		if (window.scrollY > 50) {
+			navbar.classList.add('scrolled');
+		} else {
+			navbar.classList.remove('scrolled');
+		}
+	});
+</script>
 
 	</body>
 
