@@ -1,0 +1,2 @@
+/* Placeholder for DRMD-ECT-System logo */
+/* Replace this directory with the actual logo.png image */
