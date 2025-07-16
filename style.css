@@ -218,7 +218,7 @@ h6 {
 }
 
 .hero-buttons {
-  margin-bottom: 48px;
+  margin-bottom: 80px;
 }
 
 .btn-animated {
@@ -259,7 +259,7 @@ h6 {
 
 .scroll-indicator {
   position: absolute;
-  bottom: 32px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
 }
