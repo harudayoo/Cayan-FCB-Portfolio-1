@@ -485,12 +485,12 @@ h6 {
 
 .skills-category {
   color: var(--text-dark);
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   font-size: 24px;
 }
 
 .skill-item {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .skill-info {
